@@ -5,7 +5,7 @@ from google.colab import drive
 import os
 
 drive.mount('/content/drive')
-path = "/content/drive/MyDrive/Colab Notebooks/CreateLLM_Data/DataSet_3.txt"
+path = "/content/drive/MyDrive/Colab Notebooks/CreateLLM_Data/DataSet_3.txt" # 데이터셋 경로
 
 with open(path, 'r', encoding='utf-8') as f:
     text = f.read()
@@ -50,6 +50,6 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-3)
 
 print("1")
 
-save_path = '/content/drive/MyDrive/Colab Notebooks/CreateLLM_Data/minigpt_v3.pth'
+save_path = '/content/drive/MyDrive/Colab Notebooks/CreateLLM_Data/minigpt_v3.pth' # 학습 데이터 불러오기
 model.load_state_dict(torch.load(save_path, map_location=device))
 model.eval()
