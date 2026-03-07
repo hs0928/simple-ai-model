@@ -1,2 +1,4 @@
-# simple-ai-model
-Simple next-token prediction model (built with AI assistance)
+AI 어시스턴트를 사용하다가 답답해서, 작동원리를 이해하기 위해 만들었습니다
+제작을 위해 AI어시스턴트의 도움을 받았습니다
+
+구성
